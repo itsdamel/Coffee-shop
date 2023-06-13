@@ -1,0 +1,246 @@
+/*Variables*/
+:root{
+    --mainFont: 'Fraunces', serif;
+    --textFont: 'Lato', sans-serig;
+    --subtitleFont: 'Oswald', sans-serif;
+    --darkBrown: #604829;
+    --lightBrown: #c4a47c;
+    --gray: #ACACAC;
+    --darkGray: #666;
+    --black: #000000;
+    --white: #fff
+
+}
+
+/*Initial settings*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--darkBrown);
+    padding: 10px;
+    font-family: var(--subtitleFont);
+    position: fixed;
+    width: 100vw;
+    height: fit-content;
+    z-index: 1;
+}
+
+/*Positioning written logo*/
+
+#navbar #navbar-links{
+    width: 400px;
+    display: flex;
+    font-size: 18px;
+    justify-content: space-around;
+}
+#navbar #logo{
+    font-family: var(--mainFont);
+    font-size: 25px;
+    color: var(--lightBrown);
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+#navbar a{
+    text-decoration: none;
+    color: var(--white);
+    
+}
+#navbar a:hover{
+    color: var(--lightBrown);
+}
+
+#banner{
+    background-image: url('img/parallax-imagem1.png');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Manipulation main tittle on banner*/
+#banner h1{
+    font-family: var(--mainFont);
+    font-size: 5vw;
+    font-style: italic;
+    font-weight: normal;
+    flex-shrink: 1;
+}
+
+#info{
+    display: flex;
+    flex-direction: column;
+}
+
+.text-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0px;
+}
+
+.text-section-subtitle{
+    color: var(--lightBrown);
+    font-family: var(--subtitleFont);
+    padding-bottom: 20px;
+}
+
+.text-section-text{
+    flex: 0 1 16px;
+    width: 100vw;
+    max-width: 1024px;
+    font-size: 1em;
+    text-align: justify;
+    color: var(--darkGray);
+    font-family: var(--textFont);
+    line-height: 25px;
+    padding: 0 20px;
+}
+
+.with-background{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+.with-background-subtitle{
+    background-color: var(--darkBrown);
+    color: var(--white);
+    font-family: var(--mainFont);
+    padding: 5px 30px;
+    width: fit-content;
+    font-weight: normal
+}
+
+.with-background-subtitle h3{
+    font-weight: normal;
+}
+
+#contacts{
+    justify-content: space-evenly;
+}
+#contacts iframe{
+    width: 1024px;
+    height: 450px;
+    max-width: 100vw;
+
+}
+
+#first-background{
+    background-image: url('img/parallax-imagem2.jpg');
+}
+#second-background{
+    background-image: url('img/parallax-imagem3.jpg');
+}
+#contacts{
+    background-image: url('img/parallax-imagem4.png');
+    height: 100vh;
+}
+
+#open-hours{
+    font-family: var(--textFont);
+    background-image: url('img/cafeteria.jpg');
+    padding: 100px 20px;
+    height: auto;
+    color: var(--white);
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+#open-hours-subtitle{
+    letter-spacing: 10px;
+    text-align: center;
+}
+#open-hours ul{
+    padding: 30px;
+    width: 100%;
+    max-width: 768px;
+    list-style-type: none;
+}
+
+#open-hours span{
+    color: var(--lightBrown);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#open-hours ul div{
+    height: 1px;
+    border: 0.5px solid var(--white);
+    flex: 1 1 auto;
+}
+
+
+#open-hours li h3{
+    flex: 0 1 80px;
+}
+
+ul li{
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+ul li p{
+    font-weight: bold;
+    flex: 0 1 100px;
+}
+
+/*Footer style*/
+#footer{
+    color: var(--white);
+    background-color: var(--black);
+    padding: 20px 0px;
+    font-family: var(--subtitleFont);
+    text-align: center;
+    position: relative;
+    
+}
+#footer a{
+    color: var(--lightBrown);
+    text-decoration: none;
+}
+
+
+#button{
+    position: absolute;
+    z-index: 1;
+    width: fit-content;
+    bottom: 60px;
+    right: 30px;
+}
+
+#button img{
+    width: 50px;
+}
+
+
+
+
+    
